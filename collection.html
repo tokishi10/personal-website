@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection — Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+        <circle cx="12" cy="13" r="4"/>
+      </svg>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="category.html?cat=landscape" class="nav__link">Landscape</a></li>
+      <li><a href="category.html?cat=street" class="nav__link">Street</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Collection Content ── -->
+<main class="page-content">
+
+  <section class="collection-hero container">
+    <a href="index.html#collections" class="collection-back">All Collections</a>
+    <div class="collection-header">
+      <div>
+        <p class="collection-subtitle" id="col-subtitle"></p>
+        <h1 class="collection-title"   id="col-title"></h1>
+        <p class="collection-desc"     id="col-desc"></p>
+      </div>
+      <div class="collection-count">
+        <div id="col-count">00</div>
+        <span>Photographs</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="photo-grid" id="photo-grid"></div>
+  </div>
+
+</main>
+
+<!-- ── Lightbox ── -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox__close" id="lb-close">&#215;</span>
+  <span class="lightbox__counter" id="lb-counter"></span>
+  <span class="lightbox__nav lightbox__prev" id="lb-prev">&#8592;</span>
+  <img class="lightbox__img" id="lb-img" src="" alt="">
+  <span class="lightbox__nav lightbox__next" id="lb-next">&#8594;</span>
+  <p class="lightbox__caption" id="lb-caption"></p>
+</div>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__name js-site-name">Photography</span>
+      <span class="footer__copy">© <span class="js-year"></span> · All rights reserved</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

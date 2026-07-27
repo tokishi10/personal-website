@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography</title>
+  <meta name="description" content="Personal photography portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+        <circle cx="12" cy="13" r="4"/>
+      </svg>
+    </a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="category.html?cat=landscape" class="nav__link">Landscape</a></li>
+      <li><a href="category.html?cat=street" class="nav__link">Street</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero" id="hero">
+  <div class="container">
+    <img class="hero__img" id="hero-img" src="" alt="">
+  </div>
+</section>
+<div class="hero__caption container">
+  <h1 class="hero__name">Toki SHI</h1>
+  <p class="hero__tagline" id="hero-tagline">Travel & Street Photography</p>
+</div>
+
+
+<!-- ── Statement ── -->
+<section class="statement-section">
+  <div class="container">
+    <div class="statement-rule"></div>
+    <div class="statement-body" id="statement-body"></div>
+  </div>
+</section>
+
+<!-- ── Highlights ── -->
+<section class="highlights-section">
+  <div class="container">
+    <div class="highlights-grid" id="highlights-grid"></div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__name js-site-name">Photography</span>
+      <span class="footer__copy">© <span class="js-year"></span> · All rights reserved</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
